@@ -1,9 +1,8 @@
 <?php
 
+use App\Http\Middleware\JwtAuthMiddleware;
 use Illuminate\Support\Facades\Route;
 use Modules\Auth\Http\Controllers\V1\AuthController;
-use App\Http\Middleware\JwtAuthMiddleware;
-
 
 Route::group(['prefix' => 'v1/auth', 'middleware' => JwtAuthMiddleware::class], function () {
     Route::post('login', [AuthController::class, 'login'])->withoutMiddleware(JwtAuthMiddleware::class);
