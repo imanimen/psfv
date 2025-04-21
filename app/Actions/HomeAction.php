@@ -6,7 +6,6 @@ use Imanimen\SpeedRoutes\Abstracts\ActionAbstract;
 
 class HomeAction extends ActionAbstract
 {
-
     public function render()
     {
         return parent::render();
@@ -21,6 +20,4 @@ class HomeAction extends ActionAbstract
     {
         return parent::METHOD_GET;
     }
-
 }
-

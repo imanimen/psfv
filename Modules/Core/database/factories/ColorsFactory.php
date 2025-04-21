@@ -20,4 +20,3 @@ class ColorsFactory extends Factory
         return [];
     }
 }
-
